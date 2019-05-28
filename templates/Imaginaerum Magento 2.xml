@@ -1,0 +1,15 @@
+<templateSet group="Imaginaerum Magento 2">
+  <template name="im2 todo" value="/* TODO $DATE$ $USER$: $END$ */" description="Insert TODO comment with the current date and username" toReformat="true" toShortenFQNames="true">
+    <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="USER" expression="user()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="im2 xml menu" value="&lt;config xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;urn:magento:module:Magento_Backend:etc/menu.xsd&quot;&gt;&#10;    &lt;menu&gt;&#10;        $END$&#10;    &lt;/menu&gt;&#10;&lt;/config&gt;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>
