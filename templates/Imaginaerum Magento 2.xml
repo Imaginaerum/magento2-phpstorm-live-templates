@@ -12,4 +12,10 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="im2 db_schema primary" value="&lt;!-- Primary key --&gt;&#10;&lt;column xsi:type=&quot;int&quot; name=&quot;$ENTITY_ID$&quot; padding=&quot;10&quot; unsigned=&quot;true&quot; nullable=&quot;false&quot; identity=&quot;true&quot; comment=&quot;Entity ID&quot;/&gt;&#10;&lt;constraint xsi:type=&quot;primary&quot; referenceId=&quot;PRIMARY&quot;&gt;&#10;    &lt;column name=&quot;$ENTITY_ID$&quot;/&gt;&#10;&lt;/constraint&gt;&#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="ENTITY_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
 </templateSet>
